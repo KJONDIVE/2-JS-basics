@@ -123,3 +123,5 @@ if (age >= 18) {
 } else {
   var drink = "juice";
 }
+
+console.log("test"); // to be removed
