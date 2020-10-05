@@ -107,7 +107,7 @@ if (age < 13) {
 } else {
   console.log(firstname + " is a man");
 }
-*/
+
 
 var firstname = "John";
 var age = 16;
@@ -125,3 +125,78 @@ if (age >= 18) {
 }
 
 console.log("test"); // to be removed
+
+
+// falsy values: undifined, null, 0, "", Nan
+// truthy values: Not falsy values
+
+var height = "";
+
+if (height || height === 0) {
+  console.log("Verible is defined ");
+} else {
+  console.log("Verible has NOT been defined");
+}
+
+//Equality operators
+if (height == "23") {
+  console.log("The == operator does type coercion! ");
+}
+
+var scoreJohn = (95 + 120 + 103) / 3;
+console.log(scoreJohn);
+var scoreMike = (116 + 94 + 123) / 3;
+console.log(scoreMike);
+var scoreMary = (97 + 134 + 105) / 3;
+console.log(scoreMary);
+if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+  console.log("Team John was win the game with " + scoreJohn + " points");
+} else if (scoreMike > scoreMary && scoreMike > scoreJohn) {
+  console.log("Team Mike was win the game with " + scoreMike + " points");
+} else if (scoreMary > scoreMike && scoreMary > scoreJohn) {
+  console.log("Team Mary was win the game with " + scoreMary + " points");
+} else {
+  console.log("There is a draw!!");
+}
+
+
+  if (scoreJohn > scoreMike) {
+    console.log("Team John was win the game with " + scoreJohn + " points");
+  } else if (scoreMike > scoreJohn) {
+    console.log("Team Mike was win the game with " + scoreMike + " points");
+  } else {
+    console.log("There is a draw!!!");
+  }
+ 
+
+//Functions
+
+function calculateAge(birthYear) {
+  return 2018 - birthYear;
+}
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName) {
+  var age = calculateAge(year);
+  var retiment = 65 - age;
+
+  if (retiment > 0) {
+    console.log(firstName + " retires in " + retiment + " years");
+  } else console.log(firstName + " already retired.");
+}
+
+yearsUntilRetirement(1990, "John");
+yearsUntilRetirement(1948, "Mike");
+yearsUntilRetirement(1969, "Jane");
+ */
+
+//Function Statements and Expressions
+
+var whatDoYouDO = function (job, firstname) {
+  switch(job){
+    case "teacher"
+  }
+};
